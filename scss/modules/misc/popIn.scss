@@ -1,0 +1,15 @@
+.popIn{
+  @include animation(popIn, $anim-speed, $anim-easing);
+}
+
+@keyframes popIn{
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

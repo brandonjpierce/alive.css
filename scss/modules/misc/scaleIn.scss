@@ -1,0 +1,14 @@
+.scaleIn{
+  @include animation(scaleIn, $anim-speed, $anim-easing);
+}
+
+@keyframes scaleIn{
+  0% {
+    transform: scale(.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

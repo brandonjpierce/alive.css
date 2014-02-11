@@ -1,0 +1,12 @@
+.slideOutRight{
+  @include animation(slideOutRight, $anim-speed, $anim-easing);
+}
+
+@keyframes slideOutRight{
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}

@@ -1,0 +1,8 @@
+@mixin animation ($animation, $duration, $easing, $delay:0) {
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-timing-function: $easing;
+    animation-delay: $delay;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+}

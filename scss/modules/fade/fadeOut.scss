@@ -1,0 +1,12 @@
+.fadeOut{
+  @include animation(fadeOut, $anim-speed, $anim-easing);
+}
+
+@keyframes fadeOut{
+  0 {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.fadeOutLeft{
+  @include animation(fadeOutLeft, $anim-speed, $anim-easing);
+}
+
+@keyframes fadeOutLeft{
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+}

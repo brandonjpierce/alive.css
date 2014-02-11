@@ -1,0 +1,20 @@
+.bounceInUp{
+  @include animation(bounceInUp, $anim-speed, $anim-easing);
+}
+
+@keyframes bounceInUp{
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-20%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

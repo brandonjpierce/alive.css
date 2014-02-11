@@ -1,0 +1,12 @@
+.slideInUp{
+  @include animation(slideInUp, $anim-speed, $anim-easing);
+}
+
+@keyframes slideInUp{
+  0% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

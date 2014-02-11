@@ -1,0 +1,20 @@
+.bounceInLeft{
+  @include animation(bounceInLeft, $anim-speed, $anim-easing);
+}
+
+@keyframes bounceInLeft{
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(20%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
