@@ -3,7 +3,7 @@
 A comprehensive css animation library built with SASS and optimized for performance. Each animation has been created to be as close to 60 fps as possible.
 
 ##Usage
-Simply add the animate.css stylesheet into your document's `<head>` and add the class name of the animation you would like to any element. You can also trigger animations with javascript:
+Simply add the alive.min.css stylesheet into your document's `<head>` and add the class name of the animation you would like to any element. You can also trigger animations with javascript:
 
 ```javascript
 $(el).addClass('fadeInDown');
