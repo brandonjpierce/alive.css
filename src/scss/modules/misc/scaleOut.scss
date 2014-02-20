@@ -1,4 +1,4 @@
-@if $use-fade == true {
+@if $use-misc == true {
   .scaleOut{
     @include animation(scaleOut);
   }
