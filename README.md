@@ -15,11 +15,15 @@ You can also detect when an animation ends:
 $(el).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', fn());
 ```
 
-alive.css is built with SASS and gulp. To get things rolling simply do the following: 
+alive.css is built with SASS and gulp. To get things rolling simply do the following:
 
 ```sh
 $ cd path/to/alive.css/
 $ sudo npm install
+$ sudo gulp
 ```
 
-You can tell which animations to load with the settings.scss file. This allows you to keep your stylesheet small and only use the animations you really need.
+You can tell alive.css which animations to load with the `settings.scss` file. This allows you to keep your stylesheet small and only use the animations you really need.
+
+## License
+alive.css is licensed under the MIT license. (http://opensource.org/licenses/MIT)
