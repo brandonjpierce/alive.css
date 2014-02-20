@@ -1,0 +1,14 @@
+@if $use-slide == true {
+  .slideInLeft{
+    @include animation(slideInLeft);
+  }
+
+  @keyframes slideInLeft{
+    0% {
+      transform: translateX(-$slide-distance);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>alive.css</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="../dist/alive.min.css">
+    </head>
+    <body>
+        <div class="showcase">
+            <div class="showcase__item">Animation Dummy</div>
+        </div>
+
+        <div class="buttons">
+            <h3>Fades</h3>
+            <a href="#" data-animation="fadeIn" class="btn">Fade In</a>
+            <a href="#" data-animation="fadeOut" class="btn">Fade Out</a>
+            <a href="#" data-animation="fadeInUp" class="btn">Fade In Up</a>
+            <a href="#" data-animation="fadeOutUp" class="btn">Fade Out Up</a>
+            <a href="#" data-animation="fadeInDown" class="btn">Fade In Down</a>
+            <a href="#" data-animation="fadeOutDown" class="btn">Fade Out Down</a>
+            <a href="#" data-animation="fadeInRight" class="btn">Fade In Right</a>
+            <a href="#" data-animation="fadeOutRight" class="btn">Fade Out Right</a>
+            <a href="#" data-animation="fadeInLeft" class="btn">Fade In Left</a>
+            <a href="#" data-animation="fadeOutLeft" class="btn">Fade Out Left</a>
+        </div>
+        <div class="buttons">
+            <h3>Slides</h3>
+            <a href="#" data-animation="slideInUp" class="btn">Slide In Up</a>
+            <a href="#" data-animation="slideOutUp" class="btn">Slide Out Up</a>
+            <a href="#" data-animation="slideInDown" class="btn">Slide In Down</a>
+            <a href="#" data-animation="slideOutDown" class="btn">Slide Out Down</a>
+            <a href="#" data-animation="slideInRight" class="btn">Slide In Right</a>
+            <a href="#" data-animation="slideOutRight" class="btn">Slide Out Right</a>
+            <a href="#" data-animation="slideInLeft" class="btn">Slide In Left</a>
+            <a href="#" data-animation="slideOutLeft" class="btn">Slide Out Left</a>
+        </div>
+
+        <div class="buttons">
+            <h3>Bounces</h3>
+            <a href="#" data-animation="bounceInUp" class="btn">Bounce In Up</a>
+            <a href="#" data-animation="bounceOutUp" class="btn">Bounce Out Up</a>
+            <a href="#" data-animation="bounceInDown" class="btn">Bounce In Down</a>
+            <a href="#" data-animation="bounceOutDown" class="btn">Bounce Out Down</a>
+            <a href="#" data-animation="bounceInRight" class="btn">Bounce In Right</a>
+            <a href="#" data-animation="bounceOutRight" class="btn">Bounce Out Right</a>
+            <a href="#" data-animation="bounceInLeft" class="btn">Bounce In Left</a>
+            <a href="#" data-animation="bounceOutLeft" class="btn">Bounce Out Left</a>
+        </div>
+
+        <div class="buttons">
+            <h3>Attention Grabbers</h3>
+            <a href="#" data-animation="shake" class="btn">Shake</a>
+            <a href="#" data-animation="bounce" class="btn">Bounce</a>
+            <a href="#" data-animation="hang" class="btn">Hang</a>
+            <a href="#" data-animation="hover" class="btn">Hover</a>
+        </div>
+
+        <div class="buttons">
+            <h3>Misc</h3>
+            <a href="#" data-animation="scaleIn" class="btn">Scale In</a>
+            <a href="#" data-animation="scaleOut" class="btn">Scale Out</a>
+            <a href="#" data-animation="fallIn" class="btn">Fall In</a>
+            <a href="#" data-animation="fallOut" class="btn">Fall Out</a>
+            <a href="#" data-animation="popIn" class="btn">Pop In</a>
+            <a href="#" data-animation="popOut" class="btn">Pop Out</a>
+            <a href="#" data-animation="flipInVertical" class="btn">Flip In Vertical</a>
+            <a href="#" data-animation="flipOutVertical" class="btn">Flip Out Vertical</a>
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            function addAnim(element) {
+                var anim = element.data('animation');
+                $('.showcase__item').addClass(anim);
+
+                if(anim == 'hang' || anim == 'hover') {
+                    setTimeout(function(){
+                        $('.showcase__item').removeClass(element.attr('data-animation'));
+                    }, 2400);
+                } else {
+                    setTimeout(function(){
+                        $('.showcase__item').removeClass(element.attr('data-animation'));
+                    }, 600);
+                }
+            }
+
+            $('.btn').on('click', function(e){
+                e.preventDefault();
+                addAnim($(this));
+            })
+        </script>
+    </body>
+</html>

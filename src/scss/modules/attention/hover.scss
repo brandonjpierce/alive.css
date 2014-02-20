@@ -1,0 +1,17 @@
+@if $use-attention == true {
+    .hover{
+      @include animation(hover);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes hover{
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: translateY(-6%);
+      }
+    }
+}

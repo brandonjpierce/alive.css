@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    $DEFAULTS
+\*------------------------------------*/
+/**
+ * alive.css default variables.
+ */
+
+$anim-speed: .6s !default;
+$anim-delay: 0 !default;
+$anim-easing: ease !default;
+
+$slide-distance: 50% !default;
+$fade-distance: 20% !default;
+$bounce-distance: 50% !default;
+
+$use-fade: true !default;
+$use-slide: true !default;
+$use-attention: true !default;
+$use-bounce: true !default;
+$use-misc: true !default;

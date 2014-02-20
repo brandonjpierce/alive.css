@@ -1,0 +1,22 @@
+@if $use-bounce == true {
+  .bounceInRight{
+    @include animation(bounceInRight);
+  }
+
+  @keyframes bounceInRight{
+    0% {
+      transform: translateX($bounce-distance);
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(-20%);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(15%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

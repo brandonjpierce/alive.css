@@ -1,0 +1,17 @@
+@if $use-fade == true {
+  .popIn{
+    @include animation(popIn);
+  }
+
+  @keyframes popIn{
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(.7);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}

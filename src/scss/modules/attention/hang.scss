@@ -1,0 +1,17 @@
+@if $use-attention == true {
+    .hang{
+      @include animation(hang);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    @keyframes hang{
+      from {
+        transform: translateY(0);
+      }
+
+      to {
+        transform: translateY(6%);
+      }
+    }
+}

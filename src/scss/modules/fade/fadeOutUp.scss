@@ -1,0 +1,16 @@
+@if $use-fade == true {
+  .fadeOutUp{
+    @include animation(fadeOutUp);
+  }
+
+  @keyframes fadeOutUp{
+    0{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-$fade-distance);
+      opacity: 0;
+    }
+  }
+}

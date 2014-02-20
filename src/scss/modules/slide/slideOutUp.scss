@@ -1,0 +1,14 @@
+@if $use-slide == true {
+  .slideOutUp{
+    @include animation(slideOutUp);
+  }
+
+  @keyframes slideOutUp{
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-$slide-distance);
+    }
+  }
+}

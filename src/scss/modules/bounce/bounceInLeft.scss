@@ -1,0 +1,22 @@
+@if $use-bounce == true {
+  .bounceInLeft{
+    @include animation(bounceInLeft);
+  }
+
+  @keyframes bounceInLeft{
+    0% {
+      transform: translateX(-$bounce-distance);
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(20%);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(-15%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

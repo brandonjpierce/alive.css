@@ -1,0 +1,14 @@
+@if $use-fade == true {
+  .fadeOut{
+    @include animation(fadeOut);
+  }
+
+  @keyframes fadeOut{
+    0 {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+}

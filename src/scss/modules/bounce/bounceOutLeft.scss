@@ -1,0 +1,19 @@
+@if $use-bounce == true {
+  .bounceOutLeft{
+    @include animation(bounceOutLeft);
+  }
+
+  @keyframes bounceOutLeft{
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(20%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-$bounce-distance);
+      opacity: 0;
+    }
+  }
+}

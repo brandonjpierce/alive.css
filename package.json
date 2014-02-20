@@ -1,0 +1,18 @@
+{
+  "name": "alive.css",
+  "version": "0.0.1",
+  "description": "Comprehensive CSS animation library",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "~3.5.2",
+    "gulp-util": "~2.2.14",
+    "gulp-rename": "~1.1.0",
+    "gulp-autoprefixer": "0.0.6",
+    "gulp-sass": "~0.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Pierce",
+  "license": "MIT"
+}

@@ -1,0 +1,16 @@
+@if $use-fade == true {
+  .fadeInRight{
+    @include animation(fadeInRight);
+  }
+
+  @keyframes fadeInRight{
+    0% {
+      transform: translateX($fade-distance);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}

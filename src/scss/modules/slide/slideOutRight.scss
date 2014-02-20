@@ -1,0 +1,14 @@
+@if $use-slide == true {
+  .slideOutRight{
+    @include animation(slideOutRight);
+  }
+
+  @keyframes slideOutRight{
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX($slide-distance);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@if $use-slide == true {
+  .slideInDown{
+    @include animation(slideInDown);
+  }
+
+  @keyframes slideInDown{
+    0% {
+      transform: translateY(-$slide-distance);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

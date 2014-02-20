@@ -5,9 +5,8 @@ var prefix = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 
 gulp.task('sass', function () {
-  gulp.src('./scss/alive.scss')
+  return gulp.src('./src/scss/alive.scss')
     .pipe(sass({
-      includePaths: ['./scss/'],
       outputStyle: 'compressed'
     }))
     .pipe(prefix("last 2 version", "ie 9"))
@@ -15,10 +14,8 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default', function () {
-  gulp.run('sass');
+gulp.task('watch', function() {
+  gulp.watch(['./src/scss/*.scss', './src/scss/**/*.scss'], ['sass']);
+})
 
-  gulp.watch(['./scss/*.scss', './scss/**/*.scss'], function () {
-    gulp.run('sass');
-  });
-});
+gulp.task('default', ['sass', 'watch']);
