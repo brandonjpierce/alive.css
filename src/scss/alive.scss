@@ -1,45 +1,23 @@
-@import 'settings';
-@import 'mixins';
+/*------------------------------------*\
+    $DEFAULTS
+\*------------------------------------*/
+/**
+ * alive.css default variables.
+ */
 
-@import 'modules/fade/fadeIn';
-@import 'modules/fade/fadeOut';
-@import 'modules/fade/fadeInRight';
-@import 'modules/fade/fadeOutRight';
-@import 'modules/fade/fadeInLeft';
-@import 'modules/fade/fadeOutLeft';
-@import 'modules/fade/fadeInUp';
-@import 'modules/fade/fadeOutUp';
-@import 'modules/fade/fadeInDown';
-@import 'modules/fade/fadeOutDown';
+$anim-speed: .6s !default;
+$anim-delay: 0 !default;
+$anim-easing: ease !default;
 
-@import 'modules/slide/slideInUp';
-@import 'modules/slide/slideOutUp';
-@import 'modules/slide/slideInDown';
-@import 'modules/slide/slideOutDown';
-@import 'modules/slide/slideInRight';
-@import 'modules/slide/slideOutRight';
-@import 'modules/slide/slideInLeft';
-@import 'modules/slide/slideOutLeft';
+$slide-distance: 50% !default;
+$fade-distance: 20% !default;
+$bounce-distance: 50% !default;
 
-@import 'modules/bounce/bounceInUp';
-@import 'modules/bounce/bounceOutUp';
-@import 'modules/bounce/bounceInDown';
-@import 'modules/bounce/bounceOutDown';
-@import 'modules/bounce/bounceInRight';
-@import 'modules/bounce/bounceOutRight';
-@import 'modules/bounce/bounceInLeft';
-@import 'modules/bounce/bounceOutLeft';
-
-@import 'modules/attention/shake';
-@import 'modules/attention/bounce';
-@import 'modules/attention/hang';
-@import 'modules/attention/hover';
-
-@import 'modules/misc/scaleIn';
-@import 'modules/misc/scaleOut';
-@import 'modules/misc/fallIn';
-@import 'modules/misc/fallOut';
-@import 'modules/misc/popIn';
-@import 'modules/misc/popOut';
-@import 'modules/misc/flipInVertical';
-@import 'modules/misc/flipOutVertical';
+@mixin animation ($animation, $duration:$anim-speed, $easing:$anim-easing, $delay:$anim-delay) {
+    animation-name: $animation;
+    animation-duration: $duration;
+    animation-timing-function: $easing;
+    animation-delay: $delay;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+}

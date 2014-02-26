@@ -1,34 +1,32 @@
-@if $use-attention == true {
-  .bounce{
-    @include animation(bounce);
+.bounce{
+  @include animation(bounce);
+}
+
+@keyframes bounce{
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: translateY(8%);
   }
 
-  @keyframes bounce{
-    0% {
-      transform: translateY(0);
-    }
-    15% {
-      transform: translateY(8%);
-    }
+  30% {
+    transform: translateY(-6%);
+  }
 
-    30% {
-      transform: translateY(-6%);
-    }
+  50% {
+    transform: translateY(4%);
+  }
 
-    50% {
-      transform: translateY(4%);
-    }
+  65% {
+    transform: translateY(-2%);
+  }
 
-    65% {
-      transform: translateY(-2%);
-    }
+  80% {
+    transform: translateY(1%);
+  }
 
-    80% {
-      transform: translateY(1%);
-    }
-
-    100% {
-      transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
   }
 }

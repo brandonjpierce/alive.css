@@ -1,16 +1,14 @@
-@if $use-misc == true {
-  .fallOut{
-    @include animation(fallOut);
-  }
+.fallOut{
+  @include animation(fallOut);
+}
 
-  @keyframes fallOut{
-    0% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(.7);
-      opacity: 0;
-    }
+@keyframes fallOut{
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(.7);
+    opacity: 0;
   }
 }

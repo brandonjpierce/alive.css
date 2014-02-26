@@ -1,22 +1,20 @@
-@if $use-bounce == true {
-  .bounceInUp{
-    @include animation(bounceInUp);
-  }
+.bounceInUp{
+  @include animation(bounceInUp);
+}
 
-  @keyframes bounceInUp{
-    0% {
-      transform: translateY($bounce-distance);
-      opacity: 0;
-    }
-    60% {
-      transform: translateY(-20%);
-      opacity: 1;
-    }
-    80% {
-      transform: translateY(15%);
-    }
-    100% {
-      transform: translateY(0);
-    }
+@keyframes bounceInUp{
+  0% {
+    transform: translateY($bounce-distance);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-20%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

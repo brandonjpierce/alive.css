@@ -1,21 +1,19 @@
-@if $use-misc == true {
-  .flipInVertical{
-    @include animation(flipInVertical);
-  }
+.flipInVertical{
+  @include animation(flipInVertical);
+}
 
-  @keyframes flipInVertical{
-    0% {
-      transform: perspective(200px) rotateX(90deg);
-      opacity: 0;
-    }
-    50% {
-      transform: perspective(200px) rotateX(-10deg);
-    }
-    70% {
-      transform: perspective(200px) rotateX(10deg);
-    }
-    100% {
-      transform: perspective(200px) rotateX(0);
-    }
+@keyframes flipInVertical{
+  0% {
+    transform: perspective(200px) rotateX(90deg);
+    opacity: 0;
+  }
+  50% {
+    transform: perspective(200px) rotateX(-10deg);
+  }
+  70% {
+    transform: perspective(200px) rotateX(10deg);
+  }
+  100% {
+    transform: perspective(200px) rotateX(0);
   }
 }

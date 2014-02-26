@@ -1,14 +1,12 @@
-@if $use-slide == true {
-  .slideInRight{
-    @include animation(slideInRight);
-  }
+.slideInRight{
+  @include animation(slideInRight);
+}
 
-  @keyframes slideInRight{
-    0% {
-      transform: translateX($slide-distance);
-    }
-    100% {
-      transform: translateX(0);
-    }
+@keyframes slideInRight{
+  0% {
+    transform: translateX($slide-distance);
+  }
+  100% {
+    transform: translateX(0);
   }
 }

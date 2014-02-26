@@ -1,16 +1,14 @@
-@if $use-fade == true {
-  .fadeOutRight{
-    @include animation(fadeOutRight);
-  }
+.fadeOutRight{
+  @include animation(fadeOutRight);
+}
 
-  @keyframes fadeOutRight{
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX($fade-distance);
-      opacity: 0;
-    }
+@keyframes fadeOutRight{
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX($fade-distance);
+    opacity: 0;
   }
 }

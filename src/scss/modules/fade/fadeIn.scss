@@ -1,14 +1,12 @@
-@if $use-fade == true {
-  .fadeIn{
-    @include animation(fadeIn);
-  }
+.fadeIn{
+  @include animation(fadeIn);
+}
 
-  @keyframes fadeIn{
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

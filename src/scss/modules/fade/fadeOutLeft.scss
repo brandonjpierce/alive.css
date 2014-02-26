@@ -1,16 +1,14 @@
-@if $use-fade == true {
-  .fadeOutLeft{
-    @include animation(fadeOutLeft);
-  }
+.fadeOutLeft{
+  @include animation(fadeOutLeft);
+}
 
-  @keyframes fadeOutLeft{
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(-$fade-distance);
-      opacity: 0;
-    }
+@keyframes fadeOutLeft{
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-$fade-distance);
+    opacity: 0;
   }
 }
