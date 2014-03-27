@@ -60,21 +60,10 @@ var config = {
 
 var cssSrc = ['./src/scss/alive.scss'];
 
-for (var cat in config) {
-  for (var file in config[cat]) {
-    if (config[cat][file]) {
-      cssSrc.push('./src/scss/modules/' + cat + '/' + file + '.scss');
-    }
-  }
-}
-
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   return gulp.src(cssSrc)
-    .pipe(concat('concat.scss'))
-    .pipe(gulp.dest('./src/scss'))
     .pipe(sass({
       outputStyle: 'compressed',
-      includePaths: './src/scss/concat.scss',
     }))
     .pipe(prefix('last 3 version', 'ie 9', 'bb 10', 'android 3'))
     .pipe(rename('alive.min.css'))
