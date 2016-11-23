@@ -4,11 +4,11 @@
   "description": "Comprehensive CSS animation library",
   "main": "gulpfile.js",
   "devDependencies": {
-    "gulp": "~3.5.2",
-    "gulp-util": "~2.2.14",
-    "gulp-rename": "~1.1.0",
-    "gulp-autoprefixer": "0.0.6",
-    "gulp-sass": "~0.5.2",
+    "gulp": "~3.9.1",
+    "gulp-util": "~3.0.7",
+    "gulp-rename": "~1.2.2",
+    "gulp-autoprefixer": "3.1.1",
+    "gulp-sass": "~2.3.2",
     "gulp-concat": "^2.1.7"
   },
   "scripts": {
